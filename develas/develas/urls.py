@@ -17,6 +17,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-urlpatterns = [
-    path('admin/', admin.site.urls),
-]
+urlpatterns = [ 
+    path("admin/", admin.site.urls), 
+    path("", views.home, name="home"), 
+    path("vagas/", views.mural, name="mural"), 
+    path("vagas/<int:vaga_id>/", views.detalhe, name="detalhe"),
+    ]
+
