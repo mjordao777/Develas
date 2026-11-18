@@ -89,3 +89,4 @@ VAGAS = [
         "descricao": "A descrição que você escreveu para esta vaga.", 
     }, 
 ] 
+
