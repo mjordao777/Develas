@@ -1,0 +1,73 @@
+{% load static %} 
+
+{% with pagina=request.resolver_match.url_name %} 
+
+<nav class="navbar navbar-expand-md navbar-dark bg-develas"> 
+
+  <div class="container"> 
+
+    <a class="navbar-brand fw-bold d-flex align-items-center gap-2" 
+
+       href="{% url 'home' %}"> 
+
+      <img class="logo-develas" src="{% static 'vagas/img/logo.svg' %}" alt=""> 
+
+      DevElas 
+
+    </a> 
+
+    <button class="navbar-toggler" type="button" aria-label="Abrir menu" 
+
+            data-bs-toggle="collapse" data-bs-target="#menu"> 
+
+      <span class="navbar-toggler-icon"></span> 
+
+    </button> 
+
+    <div class="collapse navbar-collapse" id="menu"> 
+
+      <ul class="navbar-nav ms-auto"> 
+
+        <li class="nav-item"> 
+
+          <a class="nav-link {% if pagina == 'home' %}active{% endif %}" 
+
+             href="{% url 'home' %}">Início</a> 
+
+        </li> 
+
+        <li class="nav-item"> 
+
+          <a class="nav-link {% if pagina == 'sobre' %}active{% endif %}" 
+
+             href="{% url 'sobre' %}">Sobre</a> 
+
+        </li> 
+
+        <li class="nav-item"> 
+
+          <a class="nav-link 
+
+             {% if pagina == 'mural' or pagina == 'detalhe' %}active{% endif %}" 
+
+             href="{% url 'mural' %}">Vagas</a> 
+
+        </li> 
+
+        <li class="nav-item"> 
+
+          <a class="nav-link {% if pagina == 'contato' %}active{% endif %}" 
+
+             href="{% url 'contato' %}">Fale Conosco</a> 
+
+        </li> 
+
+      </ul> 
+
+    </div> 
+
+  </div> 
+
+</nav> 
+
+{% endwith %} 

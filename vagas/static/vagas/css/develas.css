@@ -1,0 +1,73 @@
+/* Cores e estilos da DevElas: tudo num lugar só */ 
+
+ 
+
+:root { 
+
+  --cor-principal: #6C3FC5; 
+
+  --cor-destaque: #F07A4E; 
+
+} 
+
+ 
+
+.bg-develas, .badge-develas { background-color: var(--cor-principal); } 
+
+.text-develas { color: var(--cor-principal); } 
+
+.borda-destaque { border-top: 4px solid var(--cor-destaque) !important; } 
+
+ 
+
+.navbar .nav-link { color: rgba(255, 255, 255, 0.85); } 
+
+.navbar .nav-link.active { font-weight: 600; } 
+
+.logo-develas { width: 32px; height: 32px; } 
+
+ 
+
+.btn-develas, .btn-develas:hover, .btn-develas:disabled, 
+
+.btn-borda:hover, .btn-borda.active { 
+
+  background-color: var(--cor-principal); 
+
+  border-color: var(--cor-principal); 
+
+  color: #fff; 
+
+} 
+
+.btn-develas:hover { filter: brightness(0.85); } 
+
+.btn-borda { 
+
+  color: var(--cor-principal); 
+
+  border-color: var(--cor-principal); 
+
+} 
+
+ 
+
+/* Telas bem pequenas: logo e menu centralizados */ 
+
+@media (max-width: 300px) { 
+
+  .navbar .container { justify-content: center; } 
+
+} 
+
+ 
+
+.numero-destaque { 
+
+  font-size: 2.5rem; 
+
+  font-weight: 700; 
+
+  color: var(--cor-destaque); 
+
+} 
