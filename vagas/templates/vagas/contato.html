@@ -1,0 +1,123 @@
+{% extends "vagas/base.html" %} 
+
+ 
+
+{% block titulo %}Fale Conosco | DevElas{% endblock %} 
+
+ 
+
+{% block conteudo %} 
+
+  <div class="container py-5"> 
+
+    <h1 class="fw-bold text-develas">Fale Conosco</h1> 
+
+    <p class="lead mb-4"> 
+
+      Tem uma vaga para indicar, uma dúvida ou uma ideia? Conta pra gente. 
+
+    </p> 
+
+ 
+
+    <div class="row g-4"> 
+
+      <div class="col-lg-7"> 
+
+        <div class="card border-0 shadow-sm borda-destaque"> 
+
+          <div class="card-body p-4"> 
+
+            <form> 
+
+              <div class="mb-3"> 
+
+                <label class="form-label" for="nome">Nome</label> 
+
+                <input class="form-control" type="text" id="nome" name="nome"> 
+
+              </div> 
+
+              <div class="mb-3"> 
+
+                <label class="form-label" for="email">E-mail</label> 
+
+                <input class="form-control" type="email" id="email" name="email"> 
+
+              </div> 
+
+              <div class="mb-3"> 
+
+                <label class="form-label" for="assunto">Assunto</label> 
+
+                <select class="form-select" id="assunto" name="assunto"> 
+
+                  <option>Quero indicar uma vaga</option> 
+
+                  <option>Minha empresa quer divulgar vagas</option> 
+
+                  <option>Tenho uma dúvida</option> 
+
+                  <option>Outro assunto</option> 
+
+                </select> 
+
+              </div> 
+
+              <div class="mb-3"> 
+
+                <label class="form-label" for="mensagem">Mensagem</label> 
+
+                <textarea class="form-control" id="mensagem" name="mensagem" 
+
+                          rows="5"></textarea> 
+
+              </div> 
+
+              <button class="btn btn-develas" type="submit" disabled> 
+
+                Envio de mensagens em breve 
+
+              </button> 
+
+            </form> 
+
+          </div> 
+
+        </div> 
+
+      </div> 
+
+ 
+
+      <div class="col-lg-5"> 
+
+        <div class="card border-0 shadow-sm h-100"> 
+
+          <div class="card-body p-4"> 
+
+            <h2 class="h5 text-develas">Por que falar com a gente?</h2> 
+
+            <ul class="list-group list-group-flush"> 
+
+              <li class="list-group-item px-0">Indicar uma vaga que viu por aí</li> 
+
+              <li class="list-group-item px-0">Trazer a sua empresa como parceira</li> 
+
+              <li class="list-group-item px-0">Tirar dúvidas sobre o Coletivo</li> 
+
+              <li class="list-group-item px-0">Sugerir melhorias no site</li> 
+
+            </ul> 
+
+          </div> 
+
+        </div> 
+
+      </div> 
+
+    </div> 
+
+  </div> 
+
+{% endblock %} 

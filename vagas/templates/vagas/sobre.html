@@ -1,0 +1,161 @@
+{% extends "vagas/base.html" %} 
+
+ 
+
+{% block titulo %}Sobre o Coletivo | DevElas{% endblock %} 
+
+ 
+
+{% block conteudo %} 
+
+  <section class="bg-white border-bottom"> 
+
+    <div class="container py-5"> 
+
+      <h1 class="display-5 fw-bold text-develas">Sobre o Coletivo</h1> 
+
+      <p class="lead col-lg-8"> 
+
+        O Coletivo DevElas reúne mulheres que estão entrando na tecnologia. 
+
+        A gente junta vagas, troca experiências e ajuda umas às outras a dar 
+
+        o primeiro passo na carreira. 
+
+      </p> 
+
+    </div> 
+
+  </section> 
+
+ 
+
+  <section class="container py-5"> 
+
+    <div class="row text-center g-4 mb-5"> 
+
+      <div class="col-sm-4"> 
+
+        <p class="numero-destaque mb-0">{{ total }}</p> 
+
+        <p class="text-muted">vagas no mural</p> 
+
+      </div> 
+
+      <div class="col-sm-4"> 
+
+        <p class="numero-destaque mb-0">{{ empresas }}</p> 
+
+        <p class="text-muted">empresas parceiras</p> 
+
+      </div> 
+
+      <div class="col-sm-4"> 
+
+        <p class="numero-destaque mb-0">100%</p> 
+
+        <p class="text-muted">feita por mulheres</p> 
+
+      </div> 
+
+    </div> 
+
+ 
+
+    <div class="row g-4"> 
+
+      <div class="col-md-4"> 
+
+        <div class="card h-100 border-0 shadow-sm borda-destaque"> 
+
+          <div class="card-body"> 
+
+            <h2 class="h5 text-develas">Nossa missão</h2> 
+
+            <p class="card-text"> 
+
+              Encurtar o caminho entre as mulheres e a primeira vaga em tecnologia. 
+
+            </p> 
+
+          </div> 
+
+        </div> 
+
+      </div> 
+
+      <div class="col-md-4"> 
+
+        <div class="card h-100 border-0 shadow-sm borda-destaque"> 
+
+          <div class="card-body"> 
+
+            <h2 class="h5 text-develas">Como a gente ajuda</h2> 
+
+            <p class="card-text"> 
+
+              Reunindo vagas de empresas parceiras num mural fácil de filtrar. 
+
+            </p> 
+
+          </div> 
+
+        </div> 
+
+      </div> 
+
+      <div class="col-md-4"> 
+
+        <div class="card h-100 border-0 shadow-sm borda-destaque"> 
+
+          <div class="card-body"> 
+
+            <h2 class="h5 text-develas">Quem pode participar</h2> 
+
+            <p class="card-text"> 
+
+              Toda mulher que quer entrar na tecnologia, em qualquer fase. 
+
+            </p> 
+
+          </div> 
+
+        </div> 
+
+      </div> 
+
+    </div> 
+
+  </section> 
+
+ 
+
+  <section class="container pb-5"> 
+
+    <div class="bg-develas text-white rounded-4 p-4 p-md-5"> 
+
+      <h2 class="h3 fw-bold">Bora encontrar a sua vaga?</h2> 
+
+      <p class="mb-4"> 
+
+        O mural é atualizado com vagas novas das empresas parceiras. 
+
+      </p> 
+
+      <div class="d-flex flex-wrap gap-2"> 
+
+        <a class="btn btn-light btn-lg" href="{% url 'mural' %}">Ver vagas</a> 
+
+        <a class="btn btn-outline-light btn-lg" href="{% url 'contato' %}"> 
+
+          Fale com a gente 
+
+        </a> 
+
+      </div> 
+
+    </div> 
+
+  </section> 
+
+{% endblock %} 
